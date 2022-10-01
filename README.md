@@ -22,6 +22,7 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
+* User stays logged in across restarts: 
+<img src='http://g.recordit.co/N4QSbnlRt4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/yysgncnPeB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/FhiLMQwNin.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
