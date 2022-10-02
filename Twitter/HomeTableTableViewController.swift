@@ -20,7 +20,22 @@ class HomeTableTableViewController: UITableViewController {
        loadTweet()
     
        myRefreshControl.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
-       tableView.refreshControl = myRefreshControl
+        self.tableView.refreshControl = myRefreshControl
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 150
+        
+        
+    }
+    
+    @IBAction func onLogout(_ sender: Any) {
+        TwitterAPICaller.client?.logout()
+        self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweet()
     }
     
     @objc func loadTweet(){
@@ -28,7 +43,7 @@ class HomeTableTableViewController: UITableViewController {
         
         let myURL = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         let myParams = ["count": numberOftweets]
-        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams, success: {
+        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams as [String : Any], success: {
             (tweets: [NSDictionary]) in
             self.tweetArray.removeAll()
             for tweet in tweets{
@@ -49,7 +64,7 @@ class HomeTableTableViewController: UITableViewController {
 
         numberOftweets = numberOftweets + 20
         let myParams = ["count": numberOftweets]
-        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams, success: {
+        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams as [String : Any], success: {
             (tweets: [NSDictionary]) in
             self.tweetArray.removeAll()
             for tweet in tweets{
@@ -70,16 +85,6 @@ class HomeTableTableViewController: UITableViewController {
         }
     }
     
-    
-    
-    
-   
-
-    @IBAction func onLogout(_ sender: Any) {
-        TwitterAPICaller.client?.logout()
-        self.dismiss(animated: true, completion: nil)
-        UserDefaults.standard.set(false, forKey: "userLoggedIn")
-    }
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCell
@@ -93,6 +98,11 @@ class HomeTableTableViewController: UITableViewController {
         if let imageData = data {
             cell.profileImageView.image=UIImage(data: imageData)
         }
+        
+        cell.setFav(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
+        cell.setRetweeted(tweetArray[indexPath.row]["retweeted"] as! Bool)
+        
         return cell
     }
 
