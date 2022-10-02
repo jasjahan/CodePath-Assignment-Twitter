@@ -21,9 +21,6 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-* Part 2 Overview: 
-<img src='http://g.recordit.co/V0QtvlYOyf.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
 * User can compose a tweet: 
 <img src='http://g.recordit.co/V0QtvlYOyf.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
