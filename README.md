@@ -28,7 +28,7 @@ Here's a walkthrough of implemented user stories:
 <img src='http://g.recordit.co/wqHe2AFIFE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 * User can retweet a tweet:
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/JaxYEJvXNF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 # Twitter - Part I
