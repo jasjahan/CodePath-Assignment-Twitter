@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 * User can compose a tweet: 
 
-<img src='http://g.recordit.co/V0QtvlYOyf.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/pjZmCg4z29.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 * User can favorite a tweet:
 
