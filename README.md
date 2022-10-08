@@ -22,12 +22,15 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 * User can compose a tweet: 
+
 <img src='http://g.recordit.co/V0QtvlYOyf.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 * User can favorite a tweet:
+
 <img src='http://g.recordit.co/wqHe2AFIFE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 * User can retweet a tweet:
+
 <img src='http://g.recordit.co/JaxYEJvXNF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
@@ -56,6 +59,9 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 * User stays logged in across restarts: 
+
 <img src='http://g.recordit.co/N4QSbnlRt4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 <img src='http://g.recordit.co/yysgncnPeB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 <img src='http://g.recordit.co/FhiLMQwNin.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
