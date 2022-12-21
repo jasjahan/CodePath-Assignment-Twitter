@@ -18,22 +18,6 @@ The following **bonus** features are implemented:
 - [ ] User can view their profile in a profile tab. (3pts)
 - [ ] User sees embedded images in tweet if available. (3pts)
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-* User can compose a tweet: 
-
-<img src='http://g.recordit.co/pjZmCg4z29.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-* User can favorite a tweet:
-
-<img src='http://g.recordit.co/wqHe2AFIFE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-* User can retweet a tweet:
-
-<img src='http://g.recordit.co/5im5sjG8bj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-
 # Twitter - Part I
 
 This is a basic twitter app to read your tweets.
@@ -54,14 +38,3 @@ The following **bonus** features are implemented:
 
 - [x] User can pull to refresh. (1pt)
 - [x] User can load past tweets infinitely. (2pts)
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-* User stays logged in across restarts: 
-
-<img src='http://g.recordit.co/N4QSbnlRt4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<img src='http://g.recordit.co/yysgncnPeB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<img src='http://g.recordit.co/FhiLMQwNin.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
